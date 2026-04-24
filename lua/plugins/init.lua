@@ -2,6 +2,9 @@ vim.pack.add({
 	"https://github.com/stevearc/oil.nvim",
 	"https://github.com/christoomey/vim-tmux-navigator",
 
+	-- treesitter
+	"https://github.com/nvim-treesitter/nvim-treesitter",
+
 	-- mason / lsp
 	"https://github.com/williamboman/mason.nvim",
 	"https://github.com/williamboman/mason-lspconfig.nvim",
@@ -23,6 +26,7 @@ vim.pack.add({
 
 require("plugins.oil")
 require("plugins.tmux")
+require("plugins.treesitter")
 require("plugins.mason")
 require("plugins.blink")
 require("plugins.fzf")
