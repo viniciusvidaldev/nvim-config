@@ -1,0 +1,32 @@
+vim.pack.add({
+	"https://github.com/stevearc/oil.nvim",
+	"https://github.com/christoomey/vim-tmux-navigator",
+
+	-- mason / lsp
+	"https://github.com/williamboman/mason.nvim",
+	"https://github.com/williamboman/mason-lspconfig.nvim",
+	"https://github.com/neovim/nvim-lspconfig",
+	"https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim",
+	"https://github.com/saghen/blink.lib",
+	"https://github.com/saghen/blink.cmp",
+
+	-- fzf
+	"https://github.com/ibhagwan/fzf-lua",
+	-- "https://github.com/nvim-lua/plenary.nvim",
+	-- "https://github.com/nvim-telescope/telescope.nvim",
+
+	-- statusline
+	"https://github.com/nvim-lualine/lualine.nvim",
+
+	"https://github.com/kdheepak/lazygit.nvim",
+})
+
+require("plugins.oil")
+require("plugins.tmux")
+require("plugins.mason")
+require("plugins.blink")
+require("plugins.fzf")
+-- require("plugins.telescope")
+require("plugins.lsp")
+require("plugins.statusline")
+require("plugins.lazygit")
