@@ -16,6 +16,7 @@ Personal Neovim config (0.12+, uses built-in `vim.pack`).
 - [fzf-lua](https://github.com/ibhagwan/fzf-lua) — fuzzy finder
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) — statusline
 - [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim) — lazygit integration
+- [conform.nvim](https://github.com/stevearc/conform.nvim) — formatter runner with format-on-save
 
 ## Colorschemes
 

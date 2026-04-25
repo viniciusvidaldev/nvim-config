@@ -15,13 +15,14 @@ vim.pack.add({
 
 	-- fzf
 	"https://github.com/ibhagwan/fzf-lua",
-	-- "https://github.com/nvim-lua/plenary.nvim",
-	-- "https://github.com/nvim-telescope/telescope.nvim",
 
 	-- statusline
 	"https://github.com/nvim-lualine/lualine.nvim",
 
 	"https://github.com/kdheepak/lazygit.nvim",
+
+	-- formatter
+	"https://github.com/stevearc/conform.nvim",
 })
 
 require("plugins.oil")
@@ -30,7 +31,6 @@ require("plugins.treesitter")
 require("plugins.mason")
 require("plugins.blink")
 require("plugins.fzf")
--- require("plugins.telescope")
-require("plugins.lsp")
+require("plugins.conform")
 require("plugins.statusline")
 require("plugins.lazygit")
