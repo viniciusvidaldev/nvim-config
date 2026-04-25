@@ -22,6 +22,11 @@ require("conform").setup({
 		python = { "ruff_format", "ruff_organize_imports" },
 		sql = { "sql_formatter" },
 	},
+	formatters = {
+		sql_formatter = {
+			prepend_args = { "--language", "postgresql" },
+		},
+	},
 	format_on_save = {
 		timeout_ms = 2000,
 		lsp_format = "fallback",
