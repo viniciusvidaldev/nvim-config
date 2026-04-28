@@ -62,12 +62,3 @@ vim.opt.diffopt:append("iwhite")
 -- use histogram diff algorithm with indent heuristic for smarter diffs
 vim.opt.diffopt:append("algorithm:histogram")
 vim.opt.diffopt:append("indent-heuristic")
-
-vim.api.nvim_set_hl(0, "DiagnosticUnderlineError", { undercurl = true, sp = "#ff0000" })
-vim.api.nvim_set_hl(0, "DiagnosticUnderlineWarn", {})
-vim.api.nvim_set_hl(0, "DiagnosticUnderlineHint", {})
-vim.api.nvim_set_hl(0, "DiagnosticUnderlineInfo", {})
-
-vim.diagnostic.config({
-	underline = { severity = vim.diagnostic.severity.ERROR },
-})
