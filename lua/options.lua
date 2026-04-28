@@ -1,5 +1,8 @@
 vim.g.mapleader = " "
 
+-- use sh for nvim subprocess spawning; fish is too slow
+vim.o.shell = "/bin/sh"
+
 -- keep 2 lines visible above/below cursor when scrolling
 vim.opt.scrolloff = 2
 
@@ -61,6 +64,10 @@ vim.opt.diffopt:append("algorithm:histogram")
 vim.opt.diffopt:append("indent-heuristic")
 
 vim.api.nvim_set_hl(0, "DiagnosticUnderlineError", { undercurl = true, sp = "#ff0000" })
-vim.api.nvim_set_hl(0, "DiagnosticUnderlineWarn", { undercurl = true, sp = "#ffaa00" })
-vim.api.nvim_set_hl(0, "DiagnosticUnderlineHint", { undercurl = true, sp = "#aaaaaa" })
-vim.api.nvim_set_hl(0, "DiagnosticUnderlineInfo", { undercurl = true, sp = "#aaaaff" })
+vim.api.nvim_set_hl(0, "DiagnosticUnderlineWarn", {})
+vim.api.nvim_set_hl(0, "DiagnosticUnderlineHint", {})
+vim.api.nvim_set_hl(0, "DiagnosticUnderlineInfo", {})
+
+vim.diagnostic.config({
+	underline = { severity = vim.diagnostic.severity.ERROR },
+})

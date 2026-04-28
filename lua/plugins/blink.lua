@@ -8,6 +8,10 @@ require("blink.cmp").setup({
   },
   completion = {
     documentation = { auto_show = true, auto_show_delay_ms = 200 },
+    trigger = {
+      show_on_trigger_character = true,
+      show_on_insert_on_trigger_character = true,
+    },
   },
   sources = {
     default = { "lsp", "path", "snippets", "buffer" },

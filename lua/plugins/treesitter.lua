@@ -13,7 +13,6 @@ local ensure_installed = {
 	"html",
 	"css",
 	"json",
-	"jsonc",
 	"yaml",
 	"toml",
 	"c",

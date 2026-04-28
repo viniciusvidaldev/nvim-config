@@ -6,6 +6,10 @@ vim.keymap.set("n", "-", "<cmd>Oil<cr>")
 
 -- open error float
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "show error" })
---
+
 -- clear search highlight on <Esc>
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+
+-- auto zz
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")

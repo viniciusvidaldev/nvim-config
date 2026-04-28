@@ -1,3 +1,5 @@
+require("mini.icons").setup()
+
 require("oil").setup({
 	delete_to_trash = true,
 	skip_confirm_for_simple_edits = true,
@@ -8,8 +10,8 @@ require("oil").setup({
 	confirmation = {
 		border = "double",
 	},
-	columns =  {
-		"icon"
+	columns = {
+		"icon",
 	},
 	keymaps = {
 		["g?"] = { "actions.show_help", mode = "n" },
@@ -22,7 +24,7 @@ require("oil").setup({
 		["<C-t>"] = { "actions.select", opts = { tab = true } },
 		["<C-p>"] = "actions.preview",
 		["<C-l>"] = "actions.refresh",
-	        ["-"] = { "actions.parent", mode = "n" },
+		["-"] = { "actions.parent", mode = "n" },
 		["_"] = { "actions.open_cwd", mode = "n" },
 		["<C-i>"] = { "actions.cd", mode = "n" },
 		["gs"] = { "actions.change_sort", mode = "n" },

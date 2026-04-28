@@ -1,5 +1,6 @@
 vim.pack.add({
 	"https://github.com/stevearc/oil.nvim",
+	"https://github.com/echasnovski/mini.icons",
 	"https://github.com/christoomey/vim-tmux-navigator",
 
 	-- treesitter
@@ -23,6 +24,12 @@ vim.pack.add({
 
 	-- formatter
 	"https://github.com/stevearc/conform.nvim",
+
+	-- colorschemes
+	"https://github.com/RRethy/base16-nvim",
+
+	-- transparency
+	"https://github.com/xiyaowong/transparent.nvim",
 })
 
 require("plugins.oil")
@@ -34,3 +41,4 @@ require("plugins.fzf")
 require("plugins.conform")
 require("plugins.statusline")
 require("plugins.lazygit")
+require("plugins.transparent")

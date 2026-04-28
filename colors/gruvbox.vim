@@ -45,18 +45,18 @@ hi @tag.attribute guifg=#e2cca9 gui=none
 " Ui
 hi Search        guibg=#666666
 hi CurSearch     guibg=#a9b665
-hi IncSearch     guibg=#666666
+hi IncSearch     guibg=default
 hi Pmenu         guifg=#BFBBBA guibg=#1D2021
 hi PmenuSel      guifg=#BFBBBA guibg=#1D2021
 hi ColorColumn   guifg=default guibg=#1D2021
 
-hi PmenuSbar     guibg=#262626
+hi PmenuSbar     guibg=default
 hi PmenuThumb    guibg=#262626 gui=reverse
 hi LineNr        guifg=#d6d2c8
 hi LineNrAbove   guifg=#888888
 hi LineNrBelow   guifg=#888888
 hi WinSeparator  guibg=#111111 guifg=#888888
-hi StatusLine    guifg=#d4be98 guibg=#34383C
+hi StatusLine    guifg=#d4be98 guibg=default
 hi VertSplit     guifg=#303030
 hi Visual        guibg=#444444
 
