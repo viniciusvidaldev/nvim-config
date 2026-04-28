@@ -36,6 +36,7 @@ hi @punctuation.delimiter.double guifg=#ea6962
 hi @lsp.type.macro.rust          guifg=#d3869b
 hi @lsp.type.lifetime.rust       guifg=#d8a657
 hi @lsp.type.selfKeyword.rust    guifg=#d3869b
+hi @lsp.type.typeParameter.rust  guifg=#d3869b
 
 " JSX / React
 hi @tag.tsx       guifg=#7daea3 gui=none
