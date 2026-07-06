@@ -26,7 +26,10 @@ vim.pack.add({
 	"https://github.com/stevearc/conform.nvim",
 
 	-- colorschemes
-	"https://github.com/RRethy/base16-nvim",
+	"https://github.com/ellisonleao/gruvbox.nvim",
+	"https://github.com/vague2k/vague.nvim",
+	"https://github.com/kamwitsta/vinyl.nvim",
+	"https://github.com/NLKNguyen/papercolor-theme",
 
 	-- transparency
 	"https://github.com/xiyaowong/transparent.nvim",
@@ -42,3 +45,5 @@ require("plugins.conform")
 require("plugins.statusline")
 require("plugins.lazygit")
 require("plugins.transparent")
+require("plugins.gruvbox")
+require("plugins.no_bold")

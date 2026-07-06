@@ -4,7 +4,7 @@ if exists('syntax_on')
   syntax reset
 endif
 
-let g:colors_name = 'gruv'
+let g:colors_name = 'gruvbox-bigt'
 
 " Base
 hi Normal        guifg=#ddddcd guibg=default
