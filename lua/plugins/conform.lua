@@ -21,10 +21,16 @@ require("conform").setup({
 		zsh = { "shfmt" },
 		python = { "ruff_format", "ruff_organize_imports" },
 		sql = { "sql_formatter" },
+		asm = { "nasmfmt" },
 	},
 	formatters = {
 		sql_formatter = {
-			prepend_args = { "--language", "postgresql" },
+			prepend_args = { "--language", "postgresql", "-c", '{"useTabs":true,"tabWidth":4}' },
+		},
+		nasmfmt = {
+			command = "nasmfmt",
+			args = { "-ii", "8", "$FILENAME" },
+			stdin = false,
 		},
 	},
 	format_on_save = {

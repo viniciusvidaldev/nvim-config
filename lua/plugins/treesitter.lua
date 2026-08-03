@@ -1,4 +1,5 @@
 local ensure_installed = {
+	"asm",
 	"lua",
 	"vim",
 	"vimdoc",

@@ -6,4 +6,4 @@ require("options")
 require("plugins")
 require("keymaps")
 
-vim.cmd("colorscheme gruvbox-bigt")
+vim.cmd("colorscheme PaperColor")
